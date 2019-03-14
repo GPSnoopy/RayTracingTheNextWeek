@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src/main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src/Camera.h" />
+    <ClInclude Include="src/Random.h" />
+    <ClInclude Include="src/Ray.h" />
+    <ClInclude Include="src/Vec3.h" />
+    <ClInclude Include="src\Materials\Dielectric.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials\Lambertian.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials\Material.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials\Metal.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\HitRecord.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\Hittable.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\HittableList.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\Sphere.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials.h" />
+    <ClInclude Include="src\Hittables.h" />
+    <ClInclude Include="src\Materials\Scattered.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\SphereMoving.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\Aabb.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\BvhNode.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Textures\Texture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Textures\ConstantTexture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Textures.h" />
+    <ClInclude Include="src\Textures\CheckerTexture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\Textures\PerlinNoise.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Textures\NoiseTexture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Textures\ImageTexture.h">
+      <Filter>Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ThirdParty\stb_image.h">
+      <Filter>ThirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials\DiffuseLight.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\RectangleXY.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\RectangleYZ.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\RectangleXZ.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\FlipNormals.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\Box.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\Translate.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\RotateY.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hittables\ConstantMedium.h">
+      <Filter>Hittables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Materials\Isotropic.h">
+      <Filter>Materials</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Materials">
+      <UniqueIdentifier>{a33172c4-7f2b-4859-aab5-3cbc23b03f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hittables">
+      <UniqueIdentifier>{075a501d-deea-4759-bdd7-80588c27432f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{0c937fde-dc0b-4b71-969e-b9648001d3cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ThirdParty">
+      <UniqueIdentifier>{b59f5a57-ffed-463c-b8e7-44b233512296}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

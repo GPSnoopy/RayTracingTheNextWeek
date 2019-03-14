@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A887DF7B-6132-4C97-843F-E8B65AB989A6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Book2</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AdditionalIncludeDirectories>$(ProjectDir)\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src/main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src/Camera.h" />
+    <ClInclude Include="src/Random.h" />
+    <ClInclude Include="src/Ray.h" />
+    <ClInclude Include="src/Vec3.h" />
+    <ClInclude Include="src\Hittables.h" />
+    <ClInclude Include="src\Hittables\Aabb.h" />
+    <ClInclude Include="src\Hittables\Box.h" />
+    <ClInclude Include="src\Hittables\BvhNode.h" />
+    <ClInclude Include="src\Hittables\ConstantMedium.h" />
+    <ClInclude Include="src\Hittables\FlipNormals.h" />
+    <ClInclude Include="src\Hittables\HitRecord.h" />
+    <ClInclude Include="src\Hittables\Hittable.h" />
+    <ClInclude Include="src\Hittables\HittableList.h" />
+    <ClInclude Include="src\Hittables\RectangleXY.h" />
+    <ClInclude Include="src\Hittables\RectangleXZ.h" />
+    <ClInclude Include="src\Hittables\RectangleYZ.h" />
+    <ClInclude Include="src\Hittables\RotateY.h" />
+    <ClInclude Include="src\Hittables\Sphere.h" />
+    <ClInclude Include="src\Hittables\SphereMoving.h" />
+    <ClInclude Include="src\Hittables\Translate.h" />
+    <ClInclude Include="src\Materials.h" />
+    <ClInclude Include="src\Materials\Dielectric.h" />
+    <ClInclude Include="src\Materials\DiffuseLight.h" />
+    <ClInclude Include="src\Materials\Isotropic.h" />
+    <ClInclude Include="src\Materials\Lambertian.h" />
+    <ClInclude Include="src\Materials\Material.h" />
+    <ClInclude Include="src\Materials\Metal.h" />
+    <ClInclude Include="src\Materials\Scattered.h" />
+    <ClInclude Include="src\Textures.h" />
+    <ClInclude Include="src\Textures\CheckerTexture.h" />
+    <ClInclude Include="src\Textures\ConstantTexture.h" />
+    <ClInclude Include="src\Textures\ImageTexture.h" />
+    <ClInclude Include="src\Textures\NoiseTexture.h" />
+    <ClInclude Include="src\Textures\PerlinNoise.h" />
+    <ClInclude Include="src\Textures\Texture.h" />
+    <ClInclude Include="src\Scene.h" />
+    <ClInclude Include="src\ThirdParty\stb_image.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
