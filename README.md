@@ -5,7 +5,7 @@
 My take on [Peter Shirley's Ray Tracing The Next Week](https://github.com/petershirley/raytracingthenextweek) book. This is the second book in his *Ray Tracing In One Weekend* series. My take on his first book is available [here](https://github.com/GPSnoopy/RayTracingInOneWeekend).
 
 On top of my own programming style, I have added:
-* Multi-threading support (using a separate random number generator for each thread).
+* Multi-threading support.
 * Optimizing AABB ray intersection by removing conditional branches (this runs faster on any modern processor).
 * Building the BVH tree using `depth%3` splitting rather than random one (this seems to run faster in my case).
 * Using SSE and AVX instructions for implementing the Vec3 class.
