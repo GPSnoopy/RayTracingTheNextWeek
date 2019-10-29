@@ -2,7 +2,7 @@
 
 <img align="center" src="https://github.com/GPSnoopy/RayTracingTheNextWeek/blob/master/Book2.jpg">
 
-My take on [Peter Shirley's Ray Tracing The Next Week](https://github.com/petershirley/raytracingthenextweek) book. This is the second book in his *Ray Tracing In One Weekend* series. My take on his first book is available [here](https://github.com/GPSnoopy/RayTracingInOneWeekend).
+My take on [Peter Shirley's Ray Tracing The Next Week](https://github.com/RayTracing/raytracing.github.io) book. This is the second book in his *Ray Tracing In One Weekend* series. My take on his first book is available [here](https://github.com/GPSnoopy/RayTracingInOneWeekend).
 
 On top of my own programming style, I have added:
 * Multi-threading support.
